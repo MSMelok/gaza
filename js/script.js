@@ -10,4 +10,3 @@ function updateCounter() {
                         updateCounter();
                         setInterval(updateCounter, 60 * 60 * 1000);
                         
-}}
