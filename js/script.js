@@ -9,4 +9,3 @@ function updateCounter() {
                         // Update the counter immediately, then every hour
                         updateCounter();
                         setInterval(updateCounter, 60 * 60 * 1000);
-                        
