@@ -1,74 +1,96 @@
 /* Apply the selected font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
 * {
-    margin: 0;
-        padding: 0;
-            box-sizing: border-box;
-                font-family: "IBM Plex Sans Arabic", sans-serif;
-                    font-weight: 700;
-                    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 700;
+}
 
-                    body {
-                        background-color: #0a0f1a;
-                            color: #e0e0e0;
-                                display: flex;
-                                    flex-direction: column;
-                                        align-items: center;
-                                            justify-content: center;
-                                                height: 100vh;
-                                                    text-align: center;
-                                                        direction: rtl;
-                                                        }
+body {
+  background-color: #0a0f1a;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  direction: rtl;
+}
 
-                                                        h1 {
-                                                            font-size: 1.8em;
-                                                                margin-top: 20px;
-                                                                    color: #e0e0e0;
-                                                                    }
+h1 {
+  font-size: 1.8em;
+  margin-top: 5px;
+  color: #e0e0e0;
+}
 
-                                                                    .counter {
-                                                                        position: relative;
-                                                                            width: 240px;
-                                                                                height: 240px;
-                                                                                    border-radius: 50%;
-                                                                                        background: #1a2536;
-                                                                                            display: flex;
-                                                                                                align-items: center;
-                                                                                                    justify-content: center;
-                                                                                                        margin: 20px 0;
-                                                                                                            box-shadow: 0px 0px 20px rgba(255, 68, 68, 0.3);
-                                                                                                            }
+.counter {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #1a2536;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  box-shadow: 0px 0px 20px rgba(255, 68, 68, 0.3);
+}
 
-                                                                                                            .counter-ring {
-                                                                                                                position: absolute;
-                                                                                                                    width: 220px;
-                                                                                                                        height: 220px;
-                                                                                                                            border-radius: 50%;
-                                                                                                                                border: 8px solid #f44336;
-                                                                                                                                }
+.counter-ring {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 8px solid #f44336;
+}
 
-                                                                                                                                .counter-text {
-                                                                                                                                    font-size: 2.2em;
-                                                                                                                                        color: #ffffff;
-                                                                                                                                            z-index: 1;
-                                                                                                                                                display: flex;
-                                                                                                                                                    align-items: center;
-                                                                                                                                                        justify-content: center;
-                                                                                                                                                        }
+.dayCounter {
+  font-size: 3.5rem;
+}
+.counter-text {
+  font-size: 2.2em;
+  color: #ffffff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-                                                                                                                                                        .day-label {
-                                                                                                                                                            font-size: 1.5em;
-                                                                                                                                                                color: #ffffff;
-                                                                                                                                                                    margin-top: 8px; /* Added margin-top to create space between the day count and the label */
-                                                                                                                                                                        display: block; /* Ensures it appears on the next line */
-                                                                                                                                                                        }
+.day-label {
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: -15px;
+  display: block;
+}
 
-                                                                                                                                                                        .flag-container {
-                                                                                                                                                                            margin-top: 30px; /* Space before the flag image */
-                                                                                                                                                                            }
+.hashtagDiv {
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-                                                                                                                                                                            .palestinian-flag {
-                                                                                                                                                                                width: 100%;
-                                                                                                                                                                                    max-width: 300px; /* Adjust the size as needed */
-                                                                                                                                                                                        height: auto;
-                                                                                                                                                                                        }
+.hashtag {
+  color: #bedbff;
+  text-decoration: underline;
+  margin: 0px 2px;
+  padding: 1px 2px;
+  background-color: #217bd991;
+  border: none;
+  border-radius: 3px;
+}
+
+.flag-container {
+  margin-top: 30px; /* Space before the flag image */
+}
+
+.palestinian-flag {
+  width: 85%;
+  max-width: 300px; /* Adjust the size as needed */
+  height: auto;
+}
